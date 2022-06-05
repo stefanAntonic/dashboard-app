@@ -29,10 +29,7 @@ const options = {
   maintainAspectRatio: false ,
   stacked: false,
   plugins: {
-    title: {
-      display: true,
-      text: "Chart.js Line Chart - Multi Axis",
-    },
+   
   },
   scales: {
     y: {
@@ -55,18 +52,25 @@ const data = {
   labels,
   datasets: [
     {
-      label: "Dataset 1",
-      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+      label: "Mobile",
+      data: labels.map(() => faker.datatype.number({ min: -10, max: 401 })),
       borderColor: "rgb(255, 99, 132)",
       backgroundColor: "rgb(255, 99, 132)",
       yAxisID: "y",
     },
     {
-      label: "Dataset 2",
-      data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+      label: "Desktop",
+      data: labels.map(() => faker.datatype.number({ min: -10, max: 610 })),
       borderColor: "rgb(53, 162, 235)",
       backgroundColor: "rgb(53, 162, 235)",
-      yAxisID: "y1",
+      yAxisID: "y",
+    },
+    {
+      label: "Tablet",
+      data: labels.map(() => faker.datatype.number({ min: -10, max: 220 })),
+      borderColor: "rgb(94, 63, 190)",
+      backgroundColor: "rgb(94, 63, 190)",
+      yAxisID: "y",
     },
   ],
 };

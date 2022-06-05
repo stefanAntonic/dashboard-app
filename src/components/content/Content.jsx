@@ -30,6 +30,7 @@ function Content() {
 
     el.classList.add("text-[#F06021]", "border-[#F06021]", "tab-bordered");
   };
+
   return (
     <div className="bg-[#FDFDFD] col-span-10 ">
       {/* heading */}
@@ -106,12 +107,20 @@ function Content() {
       </div>
       {/* Dropdown ends here */}
       {/* Charts first line starts here */}
-      <div className=" grid grid-cols-4 gap-5 mt-12 place-content-evenly  pl-8 pr-8 h-80 box-border">
+      <div className=" ml-8 mt-12  flex justify-start w-64 ">
+        <a className="tab mr-6" id="subtitle1-price" onClick={handleClick}>
+          Price($)
+        </a>
+        <a className="tab" onClick={handleClick} id="subtitle1-things">
+          Things
+        </a>
+      </div>
+      <div className=" grid grid-cols-4 gap-5 mt-2 place-content-evenly  pl-8 pr-8 h-60 box-border">
         <div className=" card bg-base-100  shadow-xl col-start-1 col-end-3 ">
           <Linechart />
         </div>
         <div className="card bg-base-100  shadow-xl ">
-          <div className="card-body w-80 place-self-center">
+          <div className="card-body  place-self-center">
             <Piechart />
           </div>
         </div>
@@ -126,6 +135,34 @@ function Content() {
         </div>
       </div>
       {/* Charts first line ends here */}
+      {/* Charts line two starts here */}
+      <div className=" grid grid-cols-5 gap-5 mt-12 place-content-evenly  pl-8 pr-8 h-80 box-border">
+        <div className="text-center card">
+          <div className="stat">
+            <div className="stat-title">Downloads</div>
+            <div className="stat-value">31K</div>
+            <div className="stat-desc">Jan 1st - Feb 1st</div>
+          </div>
+
+          <div className="stat">
+            <div className="stat-title">New Users</div>
+            <div className="stat-value">4,200</div>
+            <div className="stat-desc">↗︎ 400 (22%)</div>
+          </div>
+
+          <div className="stat">
+            <div className="stat-title">New Registers</div>
+            <div className="stat-value">1,200</div>
+            <div className="stat-desc">↘︎ 90 (14%)</div>
+          </div>
+        </div>
+        <div className="card col-span-2 ">
+          <Barchart />
+        </div>
+        <div className="card col-span-2">
+          <Barchart />
+        </div>
+      </div>
     </div>
   );
 }

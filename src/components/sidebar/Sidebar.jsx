@@ -19,7 +19,7 @@ function Sidebar() {
         </div>
         <strong> Hi, Aleksandra</strong>
       </div>
-      <ul className="flex flex-col justify-start m-7 space-y-4 pt-8">
+      <ul className="flex flex-col justify-start m-7 pl-10 space-y-4 pt-8">
         <li>
           <a className="flex flex-row gap-2 active:text-[#F06021]" href="/">
             <IoAnalyticsOutline className="place-self-center" />

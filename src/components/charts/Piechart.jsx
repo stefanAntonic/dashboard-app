@@ -5,33 +5,23 @@ import { Pie } from "react-chartjs-2";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const data = {
-  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+  labels: ["Mobile", "Desktop", "Tablet"],
   datasets: [
     {
       label: "# of Votes",
-      data: [12, 19, 3, 5, 2, 3],
+      data: [400, 610, 201],
       backgroundColor: [
         "rgb(255, 99, 132)",
         "rgb(54, 162, 235)",
-        "rgb(255, 206, 86)",
-        "rgb(75, 192, 192)",
-        "rgb(153, 102, 255)",
-        "rgb(255, 159, 64)",
+        "rgb(94, 63, 190)",
       ],
-      borderColor: [
-        "rgb(255, 99, 132)",
-        "rgb(54, 162, 235)",
-        "rgb(255, 206, 86)",
-        "rgb(75, 192, 192)",
-        "rgb(153, 102, 255)",
-        "rgb(255, 159, 64)",
-      ],
+      borderColor: ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(94, 63, 190)"],
       borderWidth: 1,
     },
   ],
 };
 
 function Piechart() {
-  return <Pie data={data} />;
+  return <Pie data={data} options={{responsive: false}} />;
 }
 export default Piechart;
