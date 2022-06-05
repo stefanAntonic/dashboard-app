@@ -45,8 +45,8 @@ function Content() {
             className="input input-bordered input-sm rounded-full w-full max-w-xs mr-8"
           />
         </div>
-        {/* Heading ends here */}
       </div>
+      {/* Heading ends here */}
       {/* Time navbar */}
       <div className="tabs flex justify-center ">
         <a id="today" className="tab font-bold " onClick={handleClick}>
@@ -70,11 +70,10 @@ function Content() {
         <a id="2years" className="tab font-bold " onClick={handleClick}>
           2Years
         </a>
-        {/* Time navbar ends here */}
       </div>
-
+      {/* Time navbar ends here */}
+      {/* Dropdown select */}
       <div className="ml-8 mt-12 w-1/5">
-        {/* Dropdown select */}
         <h1 className="text-2xl">Money & Selling</h1>
         <div className="flex flex-row gap-3 pt-6">
           <div className="form-control w-full max-w-xs">
@@ -104,8 +103,9 @@ function Content() {
             </select>
           </div>
         </div>
-        {/* Dropdown ends here */}
       </div>
+      {/* Dropdown ends here */}
+      {/* Charts first line starts here */}
       <div className=" grid grid-cols-4 gap-5 mt-12 place-content-evenly  pl-8 pr-8 h-80 box-border">
         <div className=" card bg-base-100  shadow-xl col-start-1 col-end-3 ">
           <Linechart />
@@ -125,6 +125,7 @@ function Content() {
           </div>
         </div>
       </div>
+      {/* Charts first line ends here */}
     </div>
   );
 }
