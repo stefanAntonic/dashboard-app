@@ -11,7 +11,7 @@ import {
   Legend,
 } from "chart.js";
 import { Bar, Line, Pie } from "react-chartjs-2";
-import { ChartType } from "../../enums/ChartType";
+import { ChartType } from "../../utils/ChartType";
 
 ChartJS.register(
   ArcElement,

@@ -1,4 +1,4 @@
-import { ChartType }  from '../../enums/ChartType';
+import { ChartType }  from '../../utils/ChartType';
 import CustomChart from './Chart.js';
 import { faker } from '@faker-js/faker'
 
