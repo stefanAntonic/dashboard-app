@@ -21,6 +21,8 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+  maintainAspectRatio: false,
+  aspectRatio:2,
   plugins: {
     legend: {
       position: 'top',
@@ -39,12 +41,12 @@ export const data = {
   datasets: [
     {
       label: 'Dataset 1',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 401 })),
       backgroundColor: 'rgb(239,69,110)',
     },
     {
       label: 'Dataset 2',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 610 })),
       backgroundColor: 'rgb(80,173,255)',
     },
     {
@@ -60,7 +62,7 @@ export const data = {
 
 function Barchart() {
   return (
-    <Bar options={options} data={data} />
+    <Bar options={options} data={data}  />
   )
-}
+} 
 export default Barchart

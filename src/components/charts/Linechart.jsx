@@ -76,6 +76,6 @@ const data = {
 };
 
 function Linechart() {
-  return <Line options={options} data={data}  height={'100%'}/>;
+  return <Line options={options} data={data}  />;
 }
 export default Linechart;

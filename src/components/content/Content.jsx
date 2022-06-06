@@ -137,7 +137,16 @@ function Content() {
       {/* Charts first line ends here */}
       {/* Charts line two starts here */}
       <div className=" grid grid-cols-5 gap-5 mt-12 place-content-evenly  pl-8 pr-8 h-80 box-border">
-        <div className="text-center card">
+        <div className="text-center card ">
+          <div>
+            <h1 className="text-2xl text-left ml-4">Delivery</h1>
+            <a className="tab " id="chart2-stats-price" onClick={handleClick}>
+              Price($)
+            </a>
+            <a className="tab" onClick={handleClick} id="chart2-stats-things">
+              Things
+            </a>
+          </div>
           <div className="stat">
             <div className="stat-title">Downloads</div>
             <div className="stat-value">31K</div>
@@ -156,11 +165,33 @@ function Content() {
             <div className="stat-desc">↘︎ 90 (14%)</div>
           </div>
         </div>
-        <div className="card col-span-2 ">
-          <Barchart />
+        <div className="card col-span-2 bg-base-100 shadow-xl">
+          <div>
+            <h1 className="text-2xl text-left ml-4">Orders</h1>
+            <a className="tab " id="chart2-bar1-price" onClick={handleClick}>
+              Price($)
+            </a>
+            <a className="tab" onClick={handleClick} id="chart2-bar1-things">
+              Things
+            </a>
+          </div>
+          <div className="card-body place-self-center">
+            <Barchart />
+          </div>
         </div>
-        <div className="card col-span-2">
-          <Barchart />
+        <div className="card bg-base-100  shadow-xl  col-span-2">
+          <div>
+            <h1 className="text-2xl text-left ml-4">Orders</h1>
+            <a className="tab " id="char2-bar2-price" onClick={handleClick}>
+              Price($)
+            </a>
+            <a className="tab" onClick={handleClick} id="char2-bar2-things">
+              Things
+            </a>
+          </div>
+          <div className="card-body  place-self-center w-90">
+            <Barchart />
+          </div>
         </div>
       </div>
     </div>
