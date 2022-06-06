@@ -1,30 +1,31 @@
 import Barchart from "../../charts/Barchart";
 
 function ChartLineTwo() {
+  const handleClick = (e) => {
+    const el = document.getElementById(e.target.id);
+    const elements = Array.from(document.getElementsByClassName("tab"));
+    elements.forEach((e) => {
+      if (e.id !== e) {
+        e.classList.remove(
+          "text-[#F06021]",
+          "border-[#F06021]",
+          "tab-bordered"
+        );
+      }
+    });
 
-    const handleClick = (e) => {
-        const el = document.getElementById(e.target.id);
-        const elements = Array.from(document.getElementsByClassName("tab"));
-        elements.forEach((e) => {
-          if (e.id !== e) {
-            e.classList.remove(
-              "text-[#F06021]",
-              "border-[#F06021]",
-              "tab-bordered"
-            );
-          }
-        });
-    
-        el.classList.add("text-[#F06021]", "border-[#F06021]", "tab-bordered");
-      };
+    el.classList.add("text-[#F06021]", "border-[#F06021]", "tab-bordered");
+  };
 
   return (
     <>
-     {/* Charts line two starts here */}
-     <div className=" grid grid-cols-5 gap-5 mt-12 place-content-evenly  pl-8 pr-8 h-80 box-border">
-        <div className="text-center card ">
-          <div>
+      {/* Charts line two starts here */}
+      <div className=" grid grid-cols-5 gap-5 mt-12 place-content-evenly  pl-8 pr-8 box-border">
+        <div className="text-center card shadow-md">
+          <div className="card-title">
             <h1 className="text-2xl text-left ml-4">Delivery</h1>
+          </div>
+          <div>
             <a className="tab " id="chart2-stats-price" onClick={handleClick}>
               Price($)
             </a>
@@ -50,9 +51,11 @@ function ChartLineTwo() {
             <div className="stat-desc">↘︎ 90 (14%)</div>
           </div>
         </div>
-        <div className="card col-span-2 bg-base-100 shadow-xl">
-          <div>
+        <div className="card col-span-2 bg-base-100 shadow-md">
+          <div className="card-title">
             <h1 className="text-2xl text-left ml-4">Orders</h1>
+          </div>
+          <div>
             <a className="tab " id="chart2-bar1-price" onClick={handleClick}>
               Price($)
             </a>
@@ -60,13 +63,15 @@ function ChartLineTwo() {
               Things
             </a>
           </div>
-          <div className="card-body place-self-center">
+          <div className="card-body">
             <Barchart />
           </div>
         </div>
-        <div className="card bg-base-100  shadow-xl  col-span-2">
-          <div>
+        <div className="card bg-base-100  shadow-md  col-span-2">
+          <div className="card-title">
             <h1 className="text-2xl text-left ml-4">Users & Costumers</h1>
+          </div>
+          <div>
             <a className="tab " id="char2-bar2-price" onClick={handleClick}>
               Price($)
             </a>
@@ -74,12 +79,12 @@ function ChartLineTwo() {
               Things
             </a>
           </div>
-          <div className="card-body  place-self-center w-90">
+          <div className="card-body">
             <Barchart />
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
-export default ChartLineTwo
+export default ChartLineTwo;

@@ -24,7 +24,7 @@ function Navigation() {
       <div className="flex-1">
         <h1 className="text-3xl font-normal ml-8">Analytics</h1>
       </div>
-      <div className="flex-none">
+      <div className="hidden sm:block flex-none">
         <input
           type="text"
           placeholder="Type here"

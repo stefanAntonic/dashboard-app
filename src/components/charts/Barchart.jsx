@@ -1,35 +1,19 @@
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
-import { Bar } from 'react-chartjs-2';
-import { faker } from '@faker-js/faker'
+import { ChartType } from "../../enums/ChartType";
+import CustomChart from "./Chart.js";
+import { faker } from "@faker-js/faker";
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
 
 export const options = {
   responsive: true,
   maintainAspectRatio: false,
-  aspectRatio:1,
+  stacked: false,
   plugins: {
     legend: {
       position: 'top',
     },
     title: {
-      display: true,
-      text: 'Chart.js Bar Chart',
+      display: false,
+      text: '',
     },
   },
 };
@@ -62,7 +46,7 @@ export const data = {
 
 function Barchart() {
   return (
-    <Bar options={options} data={data} width={500} height={200} />
+    <CustomChart type={ChartType.Bar} options={options} data={data} />
   )
 } 
 export default Barchart
