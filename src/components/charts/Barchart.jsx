@@ -22,7 +22,7 @@ ChartJS.register(
 export const options = {
   responsive: true,
   maintainAspectRatio: false,
-  aspectRatio:2,
+  aspectRatio:1,
   plugins: {
     legend: {
       position: 'top',
@@ -62,7 +62,7 @@ export const data = {
 
 function Barchart() {
   return (
-    <Bar options={options} data={data}  />
+    <Bar options={options} data={data} width={500} height={200} />
   )
 } 
 export default Barchart
