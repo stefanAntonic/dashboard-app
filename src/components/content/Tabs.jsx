@@ -1,12 +1,14 @@
+import useWindowDimensions from "../../utils/getWindowDimension";
 import { handleActiveText } from "../../utils/helpers";
 
 function Tabs() {
+  const { width } = useWindowDimensions()
   const handleClick = (e) => {
     handleActiveText(e);
   };
 
   return (
-    <div className="tabs flex justify-center ">
+    <div className={`tabs flex ${(width < 480 ? 'justify-start flex-nowrap breadcrumbs max-w-xs ml-auto mr-auto' : 'justify-center')}`}>
       <a id="today" className="tab font-bold " onClick={handleClick}>
         Today
       </a>
