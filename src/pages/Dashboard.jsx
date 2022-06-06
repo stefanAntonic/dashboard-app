@@ -3,7 +3,7 @@ import Sidebar from "../components/sidebar/Sidebar";
 
 function Dashboard() {
   return (
-    <div className="grid grid-cols-1 h-screen lg:grid-cols-12 md:grid-cols-12 xl:grid-cols-12 2xl:grid-cols-12">
+    <div className="grid h-screen lg:grid-cols-12 md:grid-cols-12 xl:grid-cols-12 2xl:grid-cols-12">
       <Sidebar />
       <Content />
     </div>

@@ -3,10 +3,10 @@
 
 function DropdownSelect() {
   return (
-    <div className="ml-8 mt-12 w-1/5">
-    <h1 className="text-2xl">Money & Selling</h1>
-    <div className="flex flex-row gap-3 pt-6">
-      <div className="form-control w-full max-w-xs">
+    <div className="mt-12 lg:ml-8 md:ml-8 lg:w-1/5 md:w-1/5">
+    <h1 className="text-2xl ml-8">Money & Selling</h1>
+    <div className="flex flex-col items-center lg:flex-row md:flex-row gap-3 pt-6">
+      <div className="form-control w-full max-w-sm lg:max-w-xs">
         <label className="label label-text font-bold">Region</label>
         <select className="select select-bordered">
           <option disabled selected>
@@ -19,7 +19,7 @@ function DropdownSelect() {
           <option>Star Trek</option>
         </select>
       </div>
-      <div className="form-control w-full max-w-xs">
+      <div className="form-control w-full max-w-sm lg:max-w-xs">
         <label className="label label-text font-bold">Goods category</label>
         <select className="select select-bordered">
           <option disabled selected>

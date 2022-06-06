@@ -11,7 +11,7 @@ function Content() {
       <Heading />
       <Tabs />
       <MoneySelling />
-      <div className=" grid grid-cols-5 gap-5 mt-12 place-content-evenly  pl-8 pr-8 box-border">
+      <div className=" flex flex-col justify-center md:grid grid-cols-5 lg:grid grid-cols-5 xl:grid grid-cols-5  gap-5 mt-16 mb-16 place-content-evenly  pl-8 pr-8 box-border">
         <DeliveryStats />
         <OrdersBarChart />
         <UsersCostumersBarChart />

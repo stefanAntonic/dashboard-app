@@ -9,7 +9,7 @@ function DeliveryStats() {
       <div className="card-title">
         <h1 className="text-2xl text-left ml-4">Delivery</h1>
       </div>
-      <div>
+      <div className="text-left md:text-center lg:text-center">
         <a className="tab " id="chart2-stats-price" onClick={handleClick}>
           Price($)
         </a>
