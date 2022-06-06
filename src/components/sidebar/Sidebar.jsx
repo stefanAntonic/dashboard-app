@@ -3,8 +3,12 @@ import { FiTruck } from "react-icons/fi";
 import { MdOutlineReviews } from "react-icons/md";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { TbHierarchy2, TbLogout } from "react-icons/tb";
+import useWindowDimensions from "../../utils/getWindowDimension";
 
 function Sidebar() {
+  const { height, width } = useWindowDimensions();
+  
+
   return (
     <div className="hidden sm:block md:col-span-2 bg-zinc-100 lg:col-span-2 flex flex-col flex flex-col">;
       <div className=" flex flex-col justify-start items-center ">
