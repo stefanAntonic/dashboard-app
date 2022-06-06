@@ -6,7 +6,7 @@ import { TbHierarchy2, TbLogout } from "react-icons/tb";
 
 function Sidebar() {
   return (
-    <div className="hidden sm:block md:col-span-4 bg-zinc-100 lg:col-span-2 flex flex-col flex flex-col">;
+    <div className="hidden sm:block md:col-span-2 bg-zinc-100 lg:col-span-2 flex flex-col flex flex-col">;
       <div className=" flex flex-col justify-start items-center ">
         <h1 className="m-5 text-3xl text-[#F06021] font-serif">FloralSun</h1>
         <div className="avatar">
