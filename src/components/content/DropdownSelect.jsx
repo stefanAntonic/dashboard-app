@@ -3,7 +3,7 @@
 
 function DropdownSelect() {
   return (
-    <div className="mt-12 lg:ml-8 md:ml-8 lg:w-1/5 md:w-1/5">
+    <div className="mt-12 lg:ml-8 md:ml-8 lg:w-1/3 md:w-1/3">
     <h1 className="text-2xl ml-8">Money & Selling</h1>
     <div className="flex flex-col items-center lg:flex-row md:flex-row gap-3 pt-6">
       <div className="form-control w-full max-w-sm lg:max-w-xs">
