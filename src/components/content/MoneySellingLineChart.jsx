@@ -1,12 +1,12 @@
 import Linechart from "../charts/Linechart";
 
-function MoneySellingLineChart() {
+function MoneySellingLineChart({ handleData }) {
   return (
     <div className=" card bg-base-100  shadow-md col-start-1 col-end-3 ">
-    <div className="card-body ">
-      <Linechart />
+      <div className="card-body ">
+        <Linechart handleData={handleData} />
+      </div>
     </div>
-  </div>
-  )
+  );
 }
-export default MoneySellingLineChart
+export default MoneySellingLineChart;

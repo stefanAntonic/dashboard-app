@@ -89,8 +89,8 @@ function Sidebar() {
     );
   } else {
     return (
-      <div className="hidden sm:block md:col-span-2 bg-zinc-100 lg:col-span-2 flex flex-col flex flex-col">
-        ;
+      <div className="hidden sm:block md:col-span-2 bg-zinc-100 lg:col-span-2 flex flex-col">
+        
         <div className=" flex flex-col justify-start items-center ">
           <h1 className="m-5 text-3xl text-[#F06021] font-serif">FloralSun</h1>
           <div className="avatar">
@@ -103,7 +103,7 @@ function Sidebar() {
           </div>
           <strong> Hi, Aleksandra</strong>
         </div>
-        <ul className="flex flex-col justify-start m-7 pl-10 space-y-4 pt-8">
+        <ul className="flex flex-col  items-start m-4 space-y-4 pt-8  2xl:pl-10 2xl:m-7 ">
           <li>
             <a className="flex flex-row gap-2 active:text-[#F06021]" href="/">
               <IoAnalyticsOutline className="place-self-center" />
@@ -141,7 +141,7 @@ function Sidebar() {
             </a>
           </li>
           <li>
-            <a className="flex flex-row pt-64 px-16" href="/">
+            <a className="flex flex-row pt-64 xl:px-12 2xl:px-12" href="/">
               <TbLogout className="place-self-center" />
               Logout
             </a>
